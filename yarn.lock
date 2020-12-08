@@ -98,16 +98,6 @@
     reflect-metadata "^0.1.12"
     yamljs "^0.3.0"
 
-"@nestcloud/http@^0.7.13":
-  version "0.7.17"
-  resolved "https://registry.yarnpkg.com/@nestcloud/http/-/http-0.7.17.tgz#8af9c0bff1cbc9501280c8518878b9429bfa9e88"
-  integrity sha512-pFW3MpV6keXFpWRX1Q0PmF7aXsM4ZmEIbPDrjr25xuYfbuFyNIDK16qZNQDk1CddccqWfGmEhowg5bZKyCa2sg==
-  dependencies:
-    lodash "^4.17.11"
-    reflect-metadata "^0.1.12"
-    uri-params "^0.1.3"
-    uuid "^3.3.2"
-
 "@nestcloud/kubernetes@^0.7.13":
   version "0.7.17"
   resolved "https://registry.yarnpkg.com/@nestcloud/kubernetes/-/kubernetes-0.7.17.tgz#dbe130ab44a26628eedd0b3402ad4e6e384de5d7"
@@ -123,13 +113,6 @@
     reflect-metadata "^0.1.12"
     winston "^2.4.2"
     winston-daily-rotate-file "^3.8.0"
-
-"@nestcloud/proxy@^0.7.13":
-  version "0.7.17"
-  resolved "https://registry.yarnpkg.com/@nestcloud/proxy/-/proxy-0.7.17.tgz#4f51971796a9cdf516cdc1887dc2b1418376e965"
-  integrity sha512-DhXDCdd+AyYSk1H8uNeaIKUYUd5S/JwlJMsIGlKligXMgwa1QUp9RJ0TusLTg7Yf+L83W+bJPdzUNdVl8MumMw==
-  dependencies:
-    http-proxy "^1.17.0"
 
 "@nestcloud/schedule@^0.7.13":
   version "0.7.17"
@@ -1828,11 +1811,6 @@ event-target-shim@^5.0.0:
   resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
   integrity sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
 
-eventemitter3@^4.0.0:
-  version "4.0.7"
-  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
-  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
-
 exec-sh@^0.2.0:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/exec-sh/-/exec-sh-0.2.2.tgz#2a5e7ffcbd7d0ba2755bdecb16e5a427dfbdec36"
@@ -2136,11 +2114,6 @@ follow-redirects@1.5.10:
   integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
   dependencies:
     debug "=3.1.0"
-
-follow-redirects@^1.0.0:
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
-  integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
@@ -2535,15 +2508,6 @@ http-errors@~1.7.2:
     setprototypeof "1.1.1"
     statuses ">= 1.5.0 < 2"
     toidentifier "1.0.0"
-
-http-proxy@^1.17.0:
-  version "1.18.1"
-  resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.18.1.tgz#401541f0534884bbf95260334e72f88ee3976549"
-  integrity sha512-7mz/721AbnJwIVbnaSv1Cz3Am0ZLT/UBwkC92VlxhXv/k/BBQfM2fXElQNC27BVGr0uwUpplYPQM9LnaBMR5NQ==
-  dependencies:
-    eventemitter3 "^4.0.0"
-    follow-redirects "^1.0.0"
-    requires-port "^1.0.0"
 
 http-signature@~1.2.0:
   version "1.2.0"
@@ -3965,7 +3929,7 @@ multer@1.4.2:
     type-is "^1.6.4"
     xtend "^4.0.0"
 
-nan@^2.12.1:
+nan@^2.12.1, nan@^2.14.1:
   version "2.14.2"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
@@ -4832,11 +4796,6 @@ require-main-filename@^1.0.1:
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
   integrity sha1-l/cXtp1IeE9fUmpsWqj/3aBVpNE=
 
-requires-port@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
-  integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
-
 resolve-cwd@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/resolve-cwd/-/resolve-cwd-2.0.0.tgz#00a9f7387556e27038eae232caa372a6a59b665a"
@@ -5059,6 +5018,13 @@ slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
   integrity sha1-xB8vbDn8FtHNF61LXYlhFK5HDVU=
+
+sleep@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/sleep/-/sleep-6.3.0.tgz#c524e0e6d8d2e45d3f14e0ba5650fbe45f2ae876"
+  integrity sha512-+WgYl951qdUlb1iS97UvQ01pkauoBK9ML9I/CMPg41v0Ze4EyMlTgFTDDo32iYj98IYqxIjDMRd+L71lawFfpQ==
+  dependencies:
+    nan "^2.14.1"
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
@@ -5695,11 +5661,6 @@ uri-js@^4.2.2:
   integrity sha512-B0yRTzYdUCCn9n+F4+Gh4yIDtMQcaJsmYBDsTSG8g/OejKBodLQ2IHfN3bM7jUsRXndopT7OIXWdYqc1fjmV6g==
   dependencies:
     punycode "^2.1.0"
-
-uri-params@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/uri-params/-/uri-params-0.1.3.tgz#d0845e0bc31b162e8aa867c778c2f6c343ba1320"
-  integrity sha1-0IReC8MbFi6KqGfHeML2w0O6EyA=
 
 urix@^0.1.0:
   version "0.1.0"

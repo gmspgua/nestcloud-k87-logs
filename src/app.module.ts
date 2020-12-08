@@ -9,9 +9,7 @@ import * as services from './services';
 import { winstonConfig }  from './config/winston.config';
 import { resolve } from 'path';
 import { KubernetesModule } from '@nestcloud/kubernetes';
-import { HttpModule } from '@nestcloud/http';
-import { ProxyModule } from '@nestcloud/proxy';
-import {ProxyController}from './controllers/proxy.controller';
+import { UserController } from './controller/user.controller';
 
 
 
@@ -21,11 +19,9 @@ import {ProxyController}from './controllers/proxy.controller';
     ScheduleModule.forRoot(),
     BootModule.forRoot({ filePath: resolve(__dirname, 'config.yaml') }),
     ConfigModule.forRootAsync({ inject: [KUBERNETES, BOOT] }),
-    HttpModule.forRoot(),
-    ProxyModule.forRootAsync({ inject: [BOOT] }),
     KubernetesModule.forRootAsync({ inject: [BOOT] }),
   ],
-  controllers: components(ProxyController),
+  controllers: components(UserController),
   providers: components(services, AppLogger),
 })
 export class AppModule {

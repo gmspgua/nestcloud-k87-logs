@@ -1,33 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  labels:
-    app: nestcloud-kubernetes-example
-  name: nestcloud-kubernetes-example
-  namespace: default
+  name: exemplo
 spec:
-  replicas: 1
   selector:
     matchLabels:
-      app: nestcloud-kubernetes-example
+      run: exemplo
+  replicas: 1
   template:
     metadata:
       labels:
-        app: nestcloud-kubernetes-example
+        name: exemplo
+        run: exemplo
     spec:
       containers:
-        - image: nestcloud/nestcloud-kubernetes-example:1.1.2
-          imagePullPolicy: IfNotPresent
-          name: proxy
+        - name: exemplo-view
+          image: nestcloud/nestcloud-kubernetes-example:1.1.2
           ports:
             - containerPort: 3200
               protocol: TCP
-          resources: {}
-          env:
-            - name: NODE_ENV
-              value: production
-            - name: RUNTIME
-              value: kubernetes
           volumeMounts:
             - mountPath: /opt/app/build/config.yaml
               name: volume-config
